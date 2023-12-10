@@ -2,7 +2,7 @@
 /* eslint-disable no-unused-vars */
 import React, { useEffect, useState } from "react";
 import styles from "./Shop.module.css";
-import Pagination from "../../Pagination/pagination";
+import Pagination from "../../Pagination/Pagination";
 import { useNavigate } from "react-router-dom";
 import Card from '../../Card/Card'
 
