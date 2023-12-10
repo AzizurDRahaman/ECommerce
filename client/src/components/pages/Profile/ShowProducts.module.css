@@ -1,0 +1,35 @@
+
+
+#product1{
+    display: flex;
+}
+
+#product1 .pro-container
+{
+    display: flex;
+    gap: 40px 20px;
+    padding-top: 20px;
+    flex-wrap: wrap;
+    padding-left: 20px;
+}
+#product1 .pro-container p{
+    font-size: larger;
+    font-weight: bold;
+}
+
+.shop-header{
+    background-image: url("../../../assets/img/banner/b1.jpg");
+}
+
+@media screen and (max-width:799px){
+    #product1{
+        flex-direction: column;
+    }
+    #product1 .pro-container {
+        justify-content: center;
+    }
+    #formholder{
+        padding: 1.75rem;
+        min-height: 40vh;
+    }
+}

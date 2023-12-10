@@ -1,0 +1,155 @@
+.cart-header{
+    background-image: url("../../../assets/img/banner/b2.jpg");
+}
+
+#cart
+{
+    overflow-x: auto;
+}
+#cart table
+{
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    white-space: no-wrap;
+}
+
+#cart-add
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+#coupon
+{
+    width: 50%;
+    margin-bottom: 30px;
+}
+#coupon h3,
+#subtotal h3
+{
+    padding-bottom: 15px;
+}
+#coupon input
+{
+    padding: 10px 20px;
+    outline: none;
+    width: 60%;
+    margin-right: 10px;
+    border: 1px solid #e2e9e1;
+}
+#coupon button,
+#subtotal button
+{
+    color: #ffffff;
+    background-color: #088178;
+    padding: 12px 20px;
+}
+#subtotal
+{
+    width: 50%;
+    margin-bottom: 30px;
+    border: 1px solid #e2e9e1;
+    padding: 30px;
+}
+#subtotal table
+{
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 20px;
+}
+#subtotal table td
+{
+    width: 50%;
+    border: 1px solid #e2e9e1;
+    padding: 10px;
+    font-size: 13px;
+}
+
+td img
+{
+    width: 70px;
+}
+td:nth-child(6) button{
+    padding: 5px;
+    padding-top: 7px;
+    background-color: white;
+    border-radius: 50%;
+    border: 2.5px solid red;
+    color: red;
+    font-size: larger;
+    font-weight: bolder;
+    cursor: pointer;
+}
+td:nth-child(6)
+{
+    width: 100px;
+    text-align: center;
+}
+td:nth-child(1)
+{
+    width: 150px;
+    text-align: center;
+}
+td:nth-child(2)
+{
+    width: 250px;
+    text-align: center;
+}
+td:nth-child(3),
+td:nth-child(4),
+td:nth-child(5)
+{
+    width: 150px;
+    text-align: center;
+}
+td:nth-child(4) button{
+    padding: 10px;
+    margin: auto 5px;
+    border-radius: 50%;
+    border: none;
+    background-color: #088178;
+    color: white;
+    font-size: larger;
+    font-weight: 700;
+    cursor: pointer;
+}
+td:nth-child(4) input
+{
+    width: 50px;
+    padding: 10px 5px 10px 15px;
+}
+thead
+{
+    border:1px solid #e2e9e1;
+    border-left: none;
+    border-right: none;
+}
+thead td
+{
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 13px;
+    padding: 18px 0;
+}
+tbody tr td
+{
+    padding-top: 15px;
+}
+tbody td
+{
+    font-size: 13px;
+}
+
+@media (max-width:477px){
+    #cart-add {
+        flex-direction: column;
+    }
+    #coupon {
+        width: 100%;
+    }
+    #subtotal {
+        width: 100%;
+        padding: 20px;
+    }
+}

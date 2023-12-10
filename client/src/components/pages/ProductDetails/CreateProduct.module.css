@@ -1,0 +1,143 @@
+#product-form{
+    display: flex;
+}
+
+#form-details
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px auto;
+    width: 65%;
+    padding-top: 25px;
+}
+
+#form-details:nth-child(1){
+    border-right: 1px solid #e1e1e1;
+}
+#form-details:nth-child(2){
+    border-left: 1px solid #e1e1e1;
+}
+
+#form-details input,
+#form-details select,
+#form-details textarea,
+#form-details .number input
+{
+    width: 100%;
+    max-width: 400px;
+    padding: 12px 15px;
+    outline: none;
+    margin-bottom: 20px;
+    border: 1px solid #e1e1e1;
+}
+
+.check{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    margin-bottom: 20px;
+}
+#form-details .check input{
+    width: 25px;
+    height: 20px;
+    margin-bottom: 0;
+    margin-left: 20px;
+}
+
+.offer{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 400px;
+}
+
+.offer input[type='checkbox'] {
+    width: 10% !important;
+    height: 20px;
+}
+
+#form-details span{
+    margin-top: 3px;
+    margin-bottom: 7px;
+    text-align: left;
+    width: 100%;
+    max-width: 400px;
+    font-weight: 700;
+}
+.offer span{
+    margin-top: 3px;
+    margin-bottom: 7px;
+    max-width: fit-content !important;
+}
+
+#images{
+    border: #333333 solid 1px !important ;
+}
+
+#form-details p{
+    text-align: left;
+    width: 53%;
+    font-weight: bold;
+    color: black;
+}
+
+#form-details p span{
+    font-weight: 300;
+    color: #333333 !important;
+}
+
+#form-details button
+{
+    background-color: #088178;
+    color: #ffffff;
+    width: 400px;
+    margin-top: 10px;
+}
+
+.imagelist{
+    display: flex;
+    justify-content: space-between;
+    padding: 3px;
+    border: 1px solid #088178;
+    align-items: center !important;
+    width: 100%;
+    max-width: 400px;
+    margin-top: 10px;
+}
+
+.imagelist img{
+    width: 120px;
+    height: 70px;
+    object-fit: contain;
+    border-radius: 5px;
+}
+
+.imagelist button{
+    width: fit-content !important;
+    padding: 3px;
+    background-color: white !important;
+    color: red !important;
+    font-size: large;
+    text-transform: uppercase;
+    margin: 0 !important;
+    border: none;
+    cursor: pointer;
+}
+
+@media screen and (max-width:799px){
+    #product-form{
+        flex-wrap: wrap;
+    }
+    #form-details:nth-child(1){
+        border-right: none;
+        margin-bottom: 0;
+    }
+    #form-details:nth-child(2){
+        border-left: none;
+        margin-top: 0;
+        padding-top: 0;
+    }
+}

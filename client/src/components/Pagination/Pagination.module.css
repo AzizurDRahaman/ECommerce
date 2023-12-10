@@ -1,0 +1,33 @@
+#pagination
+{
+    text-align: center;
+}
+
+#pagination button:disabled {
+    opacity: 0.5; /* Adjust the opacity value as needed (0.5 = 50% opacity) */
+    cursor: not-allowed; /* Change cursor to not-allowed when disabled */
+    /* Additional styling if needed */
+  }
+
+
+#pagination .selected{
+    border: 2px solid black !important;
+}
+#pagination button
+{
+    text-decoration: none;
+    background-color: #088178;
+    padding: 15px 20px;
+    border-radius: 4px;
+    color: #ffffff;
+    font-weight: 600;
+    margin: auto 3.5px;
+    border: none;
+    cursor: pointer;
+}
+
+#pagination button .link
+{
+    font-size: 16px;
+    font-weight: 600;
+}

@@ -1,0 +1,192 @@
+#checkout-form{
+    display: flex;
+    gap: 1.5rem;
+}
+
+.form{
+    width:60%;
+    max-width: 75rem;
+}
+
+.form section:nth-child(2){
+    margin-top: 2rem;
+}
+.form section{
+    border: 1px solid gray ;
+    border-radius: 5px;
+    padding: 15px;
+}
+
+.form section .header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.form section .header button{
+    border-radius: 50%;
+    width: 30px;
+    border: none;
+    background-color: #E3E6F3;
+    padding-top: 5px;
+    font-size: larger;
+    cursor: pointer;
+}
+
+.rotate{
+    transform: rotate(180deg);
+    padding-top: 10px;
+}
+
+.form section .body{
+    border: solid 1px rgb(203, 190, 190);
+    margin-top: 10px;
+    padding: 10px;
+    padding-left: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #E3E6F3;
+    gap: 0 5rem;
+}
+
+.body {
+    transition: max-height 0.2s ease-out;
+    overflow: hidden;
+    max-height: 500px; /* Approximate max height */
+  }
+  
+  .body.hide {
+    visibility: hidden;
+    max-height: 0;
+    padding: 0 !important;
+    border: none !important;
+  }
+
+.form section .body div{
+    display: flex;
+    flex-direction: column;
+}
+
+.form section .body div button{
+    background-color: #088178;
+    color: white;
+    padding: 10px;
+    margin-top: 22px;
+    width: 300px;
+    border: none;
+    cursor: pointer;
+}
+.form section .body:nth-child(2) div:nth-child(2) .cvv{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+.body:nth-child(2) .exc{
+    display: flex;
+    flex-direction: row;
+}
+
+.form section .body span{
+    font-weight: 600;
+}
+.form section .body input:focus {
+    outline: none;
+}
+
+.form section .body input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.form section .body .cvv input {
+    width: 108px !important;
+}
+.form section .body input {
+    margin: 7px 0 15px;
+    width: 300px;
+
+    padding: 12px 15px;
+    border: none;
+}
+
+.active{
+    display:hidden !important;
+}
+
+.form section .body .expiry{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.form section .body .expiry input{
+    width: 50px;
+    padding-right: 0;
+}
+.form section .body .expiry input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  #subtotal button
+{
+    color: #ffffff;
+    background-color: #088178;
+    padding: 12px 20px;
+}
+#subtotal
+{
+    width: 40%;
+    margin-bottom: 30px;
+    border: 1px solid #e2e9e1;
+    padding: 30px;
+    max-height: fit-content !important;
+}
+#subtotal table
+{
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 20px;
+}
+#subtotal table td
+{
+    width: 50%;
+    border: 1px solid #e2e9e1;
+    padding: 10px;
+    font-size: 13px;
+}
+
+#subtotal .items td:nth-child(1){
+    width: 60%;
+}
+#subtotal .items td:nth-child(2){
+    width: 20%;
+}
+
+@media (max-width:768px) {
+    #checkout-form{
+        flex-direction: column;
+    }
+    .form{
+        width: 100%;
+        justify-content: center;
+    }
+    .form section .body{
+        padding-top: 25px ;
+    }
+    .body div{
+        width: 100%;
+        margin-left:50px ;
+    }
+    .body div .expiry{
+        margin-left: 0;
+    }
+    .form section .body input{
+        width: 500px;
+    }
+    .form section .body div button{
+        width: 500px;
+    }
+    #subtotal{
+        width: 100%;
+    }
+}

@@ -1,0 +1,38 @@
+.about-header
+{
+    background-image: url("../../../assets/img/about/banner.png");
+}
+#about-header
+{
+    display: flex;
+    align-items: center;
+}
+#about-header img
+{
+    width: 50%;
+    height: auto;
+}
+#about-header div
+{
+    padding-left: 40px;
+    overflow: hidden;
+}
+
+@media (max-width:477px){
+    #about-header {
+        flex-direction: column;
+    }
+
+    #about-header img {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    #about-header div {
+        padding-left: 0px;
+    }
+    #about-app .video {
+        width: 100%;
+        height: 100%;
+    }
+}
